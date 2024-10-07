@@ -96,11 +96,18 @@
             cursor: pointer;
         }
 
-        /* Contenu principal */
-        .mainHome {
+        .mainContainer {
             background-image: url('./travel-agency-background.webp');
             background-size: cover;
             background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Contenu principal */
+        .mainHome {
+            flex: 50;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -111,7 +118,7 @@
         }
 
         .mainHome h1, .mainHome p {
-            width: 30%;
+            width: 30%; /* Limite la largeur à 30% de .mainHome */
         }
 
         .mainHome h1 {
@@ -134,9 +141,7 @@
 
         /* Style pour la barre des réseaux sociaux */
         .socialMediaBar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
+            flex: 1;
             display: flex;
             flex-direction: column-reverse;
             padding: 10px;
@@ -151,7 +156,7 @@
         }
 
         .socialMediaBar a:hover {
-            color: lightblue;
+            color: blue;
         }
     </style>
 </head>
@@ -176,26 +181,28 @@
             <button>Clear</button>
         </div>
     </div>
-    <div id="mainHome" class="mainHome">
-        <h1>EXPLORE DREAM DESTINATION</h1>
-        <p>Partez à l'aventure vers des plages exotiques, des villes vibrantes et des paysages à couper le souffle.</p>
-        <button>Book Now</button>
-    </div>
+    <div id="mainContainter" class="mainContainer">
+        <!-- Barre verticale des réseaux sociaux -->
+        <div class="socialMediaBar">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
 
-    <!-- Barre verticale des réseaux sociaux -->
-    <div class="socialMediaBar">
-        <a href="https://www.facebook.com" target="_blank">
-            <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.twitter.com" target="_blank">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
+        <div id="mainHome" class="mainHome">
+            <h1>EXPLORE DREAM DESTINATION</h1>
+            <p>Partez à l'aventure vers des plages exotiques, des villes vibrantes et des paysages à couper le souffle.</p>
+            <button>Book Now</button>
+        </div>
     </div>
 </body>
 </html>
