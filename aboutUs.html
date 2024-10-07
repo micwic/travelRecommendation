@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Police pour le site */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style pour mainBar */
+        .mainBar {
+            background-color: black; /* Fond noir */
+            color: white; /* Texte blanc par défaut */
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 5px;
+        }
+
+        /* Style pour mainLogo */
+        .mainLogo {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .mainLogo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .mainLogo h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        /* Style pour mainNavBar */
+        .mainNavBar {
+            flex: 10;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .mainNavBar ul {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mainNavBar li {
+            margin: 0 10px;
+        }
+
+        .mainNavBar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .mainContainer {
+            background-image: url('./travel-agency-background.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Contenu principal */
+        .mainHome {
+            flex: 50;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        .mainHome h1, .mainHome p {
+            width: 30%; /* Limite la largeur à 30% de .mainHome */
+        }
+
+        .mainHome h1 {
+            font-size: 3rem;
+        }
+
+        .mainHome p {
+            font-size: 1.5rem;
+        }
+
+        .mainHome button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+
+        /* Style pour la barre des réseaux sociaux */
+        .socialMediaBar {
+            flex: 1;
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 10px;
+        }
+
+        .socialMediaBar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        .socialMediaBar a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainBar" class="mainBar">
+        <div id="mainLogo" class="mainLogo">
+            <img src="my-travel-agency.jpeg" alt="Logo de My Travel Agency">
+            <h1>My Travel Agency</h1>
+        </div>
+        <div id="mainNavBar" class="mainNavBar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="mainContainter" class="mainContainer">
+        <!-- Barre verticale des réseaux sociaux -->
+        <div class="socialMediaBar">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+        <div id="mainHome" class="mainHome">
+            <h1>
+                About Us
+            </h1>
+            <p>
+                Welcome to our company défaljsdlfjlk dfljsdlfjsd lkdjflksdjfsdl  ldkjflsdkf jlkj kjf ldsjflsdjfsldjf sdljfdljf sdljf dlfjdfjdljflsdkjf ljlkdjfld fldkjfsdljf lsdkjf sldjf sldkjfdljf sdljfsdljfsdljf sdlf sdlfj sdjf  j
+            </p>
+            <div id="teamContainer" class="teamContainer">
+                <h1>Our Team</h1>
+                <div id="teamMember" class=teamMember>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
