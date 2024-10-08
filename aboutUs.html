@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="travel_recommendation.css" rel="stylesheet">
+    <link rel="stylesheet" href="./travel_recommendation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style/>
 </head>
 <body>
-    // load html content from unique files and build corresponding html part into web page from this unique source
-    <script src="./loadMainLogoBar.js"/>
-    <script src="./loadMainNavBar.js"/>
+    <!-- Site navigation bar - home page -->
     <div id="mainBar" class="mainBar">
-        <div id="mainLogo" class="mainLogo"/>
-        <div id="mainNavBar" class="mainNavBar"/>
+        <div id="mainLogo" class="mainLogo"></div>
+        <div id="mainNavBar" class="mainNavBar"></div>
     </div>
+    <!-- site main content -->
     <div id="mainContainter" class="mainContainer">
-        <!-- Barre verticale des réseaux sociaux -->
-        <div class="socialMediaBar">
-            <a href="https://www.facebook.com" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-                <i class="fab fa-youtube"></i>
-            </a>
-        </div>
-
+        <!-- Site social media bar -->
+        <div id="socialMediaBar" class="socialMediaBar"></div>
         <div id="mainHome" class="mainHome">
-            <h1>
-                About Us
-            </h1>
-            <p>
-                Welcome to our company défaljsdlfjlk dfljsdlfjsd lkdjflksdjfsdl  ldkjflsdkf jlkj kjf ldsjflsdjfsldjf sdljfdljf sdljf dlfjdfjdljflsdkjf ljlkdjfld fldkjfsdljf lsdkjf sldjf sldkjfdljf sdljfsdljfsdljf sdlf sdlfj sdjf  j
-            </p>
+            <div class="aboutUsContainer">
+                <!-- Specific About Us content -->
+                <h1>
+                    ABOUT US
+                </h1>
+                <p>
+                    Welcome to our Company!<br>We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <b><u>provide the best experience</b></u> for people traveling to different destiation around the world.
+                    Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <b><u>putting our customers first</u></b> and <b><u>working together</b></u> to achieve our goals.<br>
+                    Feel free to explore our website to learn more about what we offer!
+                </p>
+            </div>
             <div id="teamContainer" class="teamContainer">
                 <h1>Our Team</h1>
-                <div id="teamMember" class=teamMember>
-                    
-                </div>
-
+                <div id="teamMembers" class=teamMembers></div>
             </div>
         </div>
     </div>
+    <!-- Load html content from unique files and build corresponding html part into web page from this unique source -->
+    <script src="./loadMainLogo.js"></script>
+    <script src="./loadMainNavBar.js"></script>
+    <script src="./loadSocialMediaBar.js"></script>
+    <script src="./loadTeamMembers.js"></script>
 </body>
 </html>

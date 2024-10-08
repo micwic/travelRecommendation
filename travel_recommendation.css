@@ -106,17 +106,18 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: flex-start;
             color: white;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
             padding: 20px;
         }
 
         .mainHome h1, .mainHome p {
-            width: 30%; /* Limite la largeur à 30% de .mainHome */
+            width: 40%; /* Limite la largeur à 40% */
         }
 
         .mainHome h1 {
-            font-size: 3rem;
+            font-size: 5rem;
         }
 
         .mainHome p {
@@ -126,11 +127,17 @@
         .mainHome button {
             padding: 10px 20px;
             background-color: blue;
+            opacity: 0.6;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             align-self: flex-start;
+            font-size: 2rem;
+        }
+
+        .mainHome button:hover {
+            opacity: 1;
         }
 
         /* Style pour la barre des réseaux sociaux */
@@ -151,4 +158,29 @@
 
         .socialMediaBar a:hover {
             color: blue;
+        }
+
+        .aboutUsContainer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .aboutUsContainer p {
+            width: 90%;
+        }
+
+        .teamContainer {
+            flex:1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .teamMembers {
+            flex:4;
+            display: flex;
+        }
+
+        .teamMembers p .teamMembers button {
+            font-size: 1rem;
         }

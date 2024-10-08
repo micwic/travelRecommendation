@@ -1,0 +1,25 @@
+{
+    "teamMembers": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "responsibility": "John is responsible for ... ",
+            "imageURL": "./michel.wicky.jpg",
+            "jobTitle": "CEO"
+        },
+        {
+            "id": 2,
+            "name": "Celina Thomas",
+            "responsibility": "Celina is responsible for ... ",
+            "imageURL": "./michel.wicky.jpg",
+            "jobTitle": "Team Lead"
+        },
+        {
+            "id": 3,
+            "name": "Mike Tysen",
+            "responsibility": "Mike is responsible for ... ",
+            "imageURL": "./michel.wicky.jpg",
+            "jobTitle": "Delivery Head"
+        }
+    ]
+}

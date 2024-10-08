@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="travel_recommendation.css" rel="stylesheet">
+    <link rel="stylesheet" href="./travel_recommendation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style/>
 </head>
 <body>
-    // load html content from unique files and build corresponding html part into web page from this unique source
-    <script src="./loadMainLogoBar.js"/>
-    <script src="./loadMainNavBar.js"/>
+    <!-- Site navigation bar - home page -->
     <div id="mainBar" class="mainBar">
-        <div id="mainLogo" class="mainLogo"/>
-        <div id="mainNavBar" class="mainNavBar"/>
+        <div id="mainLogo" class="mainLogo"></div>
+        <div id="mainNavBar" class="mainNavBar"></div>
     </div>
+    <!-- site main content -->
+    <div id="mainContainter" class="mainContainer">
+        <!-- Site social media bar -->
+        <div id="socialMediaBar" class="socialMediaBar"></div>
+        <div id="mainHome" class="mainHome">
+            <!-- Specific Contact Us content -->
+            <h1>
+                Contact Us
+            </h1>
+            <p>To Do</p>
+        </div>
+    </div>
+    <!-- Load html content from unique files and build corresponding html part into web page from this unique source -->
+    <script src="./loadMainLogo.js"></script>
+    <script src="./loadMainNavBar.js"></script>
+    <script src="./loadSocialMediaBar.js"></script>
 </body>
+</html>
