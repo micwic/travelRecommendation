@@ -1,205 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="travel_recommendation.css">
+    <link href="travel_recommendation.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Police pour le site */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Style pour mainBar */
-        .mainBar {
-            background-color: black; /* Fond noir */
-            color: white; /* Texte blanc par défaut */
-            display: flex;
-            width: 100%;
-            align-items: center;
-            padding: 5px;
-        }
-
-        /* Style pour mainLogo */
-        .mainLogo {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .mainLogo img {
-            height: 50px;
-            margin-right: 10px;
-        }
-
-        .mainLogo h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        /* Style pour mainNavBar */
-        .mainNavBar {
-            flex: 2;
-            display: flex;
-            justify-content: center;
-        }
-
-        .mainNavBar ul {
-            list-style-type: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-
-        .mainNavBar li {
-            margin: 0 10px;
-        }
-
-        .mainNavBar a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Style pour mainSearchBar */
-        .mainSearchBar {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-            background-color: white;
-            padding: 5px 20px;
-            height: 95%;
-            border-radius: 15px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .mainSearchBar input {
-            flex: 1;
-            padding: 10px;
-            margin-right: 10px;
-            color: blue;
-            border: none;
-        }
-
-        .mainSearchBar input::placeholder {
-            color: blue;
-        }
-
-        .mainSearchBar button {
-            margin-left: 5px;
-            background-color: blue;
-            color: white;
-            padding: 5px 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .mainContainer {
-            background-image: url('./travel-agency-background.webp');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-        }
-
-        /* Contenu principal */
-        .mainHome {
-            flex: 50;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            padding: 20px;
-        }
-
-        .mainHome h1, .mainHome p {
-            width: 30%; /* Limite la largeur à 30% de .mainHome */
-        }
-
-        .mainHome h1 {
-            font-size: 3rem;
-        }
-
-        .mainHome p {
-            font-size: 1.5rem;
-        }
-
-        .mainHome button {
-            padding: 10px 20px;
-            background-color: blue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            align-self: flex-start;
-        }
-
-        /* Style pour la barre des réseaux sociaux */
-        .socialMediaBar {
-            flex: 1;
-            display: flex;
-            flex-direction: column-reverse;
-            padding: 10px;
-        }
-
-        .socialMediaBar a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: white;
-            font-size: 24px;
-        }
-
-        .socialMediaBar a:hover {
-            color: blue;
-        }
-    </style>
+    <style/>
 </head>
 <body>
+    // load html content from unique files and build corresponding html part into web page from this unique source
+    <script src="./loadMainLogoBar.js"/>
+    <script src="./loadMainNavBar.js"/>
+    <script src="./loadSearchNavBar.js"/>
+    // site navigation bar - home page
     <div id="mainBar" class="mainBar">
-        <div id="mainLogo" class="mainLogo">
-            <img src="my-travel-agency.jpeg" alt="Logo de My Travel Agency">
-            <h1>My Travel Agency</h1>
-        </div>
-        <div id="mainNavBar" class="mainNavBar">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="mainSearchBar" class="mainSearchBar">
-            <input type="text" id="searchCriteria" name="searchCriteria" placeholder="Enter a destination or keyword">
-            <button>Search</button>
-            <button>Clear</button>
-        </div>
+        <div id="mainLogo" class="mainLogo"/>
+        <div id="mainNavBar" class="mainNavBar"/>
+        <div id="mainSearchBar" class="mainSearchBar/">
     </div>
+    // site main content
     <div id="mainContainter" class="mainContainer">
-        <!-- Barre verticale des réseaux sociaux -->
-        <div class="socialMediaBar">
-            <a href="https://www.facebook.com" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-                <i class="fab fa-youtube"></i>
-            </a>
-        </div>
-
+        // site social media bar
+        <div class="socialMediaBar"/>
         <div id="mainHome" class="mainHome">
+            // specific main content
             <h1>EXPLORE DREAM DESTINATION</h1>
             <p>Partez à l'aventure vers des plages exotiques, des villes vibrantes et des paysages à couper le souffle.</p>
             <button>Book Now</button>
