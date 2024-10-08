@@ -1,130 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="travel_recommendation.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Police pour le site */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Style pour mainBar */
-        .mainBar {
-            background-color: black; /* Fond noir */
-            color: white; /* Texte blanc par défaut */
-            display: flex;
-            width: 100%;
-            align-items: center;
-            padding: 5px;
-        }
-
-        /* Style pour mainLogo */
-        .mainLogo {
-            flex: 2;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .mainLogo img {
-            height: 50px;
-            margin-right: 10px;
-        }
-
-        .mainLogo h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        /* Style pour mainNavBar */
-        .mainNavBar {
-            flex: 10;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .mainNavBar ul {
-            list-style-type: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-
-        .mainNavBar li {
-            margin: 0 10px;
-        }
-
-        .mainNavBar a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .mainContainer {
-            background-image: url('./travel-agency-background.webp');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-        }
-
-        /* Contenu principal */
-        .mainHome {
-            flex: 50;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            padding: 20px;
-        }
-
-        .mainHome h1, .mainHome p {
-            width: 30%; /* Limite la largeur à 30% de .mainHome */
-        }
-
-        .mainHome h1 {
-            font-size: 3rem;
-        }
-
-        .mainHome p {
-            font-size: 1.5rem;
-        }
-
-        .mainHome button {
-            padding: 10px 20px;
-            background-color: blue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            align-self: flex-start;
-        }
-
-        /* Style pour la barre des réseaux sociaux */
-        .socialMediaBar {
-            flex: 1;
-            display: flex;
-            flex-direction: column-reverse;
-            padding: 10px;
-        }
-
-        .socialMediaBar a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: white;
-            font-size: 24px;
-        }
-
-        .socialMediaBar a:hover {
-            color: blue;
-        }
     </style>
 </head>
 <body>
+    <script src="./loadMainNavBar.js"></script>
     <div id="mainBar" class="mainBar">
         <div id="mainLogo" class="mainLogo">
             <img src="my-travel-agency.jpeg" alt="Logo de My Travel Agency">
