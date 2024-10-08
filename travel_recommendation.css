@@ -182,6 +182,10 @@
             gap: 10px;
         }
 
+        .teamMembers h1, .teamMembers p {
+            width: 100%;
+        }
+
         .teamMember {
             background-color: rgba(0, 0, 255, 0.2); /* Bleu avec 50% de transparence */;
             padding: 10px;
@@ -197,4 +201,31 @@
             border: 1px;
             border-radius: 5px;
             text-align: center;
+        }
+
+        .contactUsContainer {
+            display:flex;
+            flex-direction: row;
+            width:100%;
+        }
+
+        .contactUsContainer h1, .contactUsContainer p {
+            width: 100%;
+        } 
+
+        .contactUsTitle {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactUsForm {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactUsForm label, .contactUsForm input {
+            display:block;
+            margin-bottom: 10px;
         }
