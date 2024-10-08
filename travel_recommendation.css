@@ -186,17 +186,36 @@
             width: 100%;
         }
 
-        .teamMember {
+        .teamMemberContainer {
+            display: flex;
+            flex-direction: row;
             background-color: rgba(0, 0, 255, 0.2); /* Bleu avec 50% de transparence */;
             padding: 10px;
         }
 
-        .teamMember p {
+        .teamMemberImage {
+            flex: 1;
+            display:flex;
+            flex-direction: column;
+        }
+
+        .teamMemberImage .memberImage {
+            width: 100%; /* L'image prendra toute la largeur du conteneur image */
+        }
+
+        .teamMemberInfo {
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+        }
+
+        .teamMemberInfo p {
             font-size: 1rem;
             width: 100%;
         }
 
-        .teamMember .jobTitle {
+        .teamMemberInfo .jobTitle {
             background-color: blue;
             border: 1px;
             border-radius: 5px;
