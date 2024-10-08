@@ -1,12 +1,12 @@
         // insère le code html du fichier mainSocialMediaBar.html dans la balise avec l'id mainSocialMediaBar
         async function loadSocialMediaBar() {
             try {
-                const response = await fetch('mainSocialMediaBar.html');
+                const response = await fetch('./socialMediaBar.html');
                 if (!response.ok) {
-                    throw new Error('Erreur lors du chargement de mainSocialMediaBar.html');
+                    throw new Error('Erreur lors du chargement de SocialMediaBar.html');
                 }
-                const mainSocialMediaBarContent = await response.text();
-                document.getElementById('mainLogo').innerHTML = mainSocialMediaBarContent;
+                const socialMediaBarContent = await response.text();
+                document.getElementById('socialMediaBar').innerHTML = socialMediaBarContent;
             } catch (error) {
                 console.error('Erreur:', error);
             }
