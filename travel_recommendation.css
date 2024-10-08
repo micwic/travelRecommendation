@@ -225,7 +225,7 @@
             flex-direction: column;
         }
 
-        .contactUsForm label, .contactUsForm input {
+        .contactUsForm label, .contactUsForm input, .contactUsForm textarea {
             display:block;
             margin-bottom: 10px;
         }
