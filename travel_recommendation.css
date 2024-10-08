@@ -229,3 +229,31 @@
             display:block;
             margin-bottom: 10px;
         }
+
+        .contactUsForm input, .contactUsForm textarea {
+            background-color: transparent; /* Fond transparent */
+            border: 1px solid white; /* Bordure blanche fine */
+            color: white; /* Texte blanc */
+            padding: 10px; /* Espacement interne */
+        }
+
+        .contactUsForm input::placeholder, .contactUsForm textarea::placeholder {
+            color:white; /* Couleur du placeholder en blanc */
+            opacity: 1; /* Assure que la couleur est pleinement appliquée */
+        }
+
+        .contactUsForm button {
+            padding: 10px 20px;
+            background-color: blue;
+            opacity: 0.6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: center;
+            font-size: 1rem;
+        }
+
+        .contactUsForm button:hover {
+            opacity: 1;
+        }
