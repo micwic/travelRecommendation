@@ -179,8 +179,22 @@
         .teamMembers {
             flex:4;
             display: flex;
+            gap: 10px;
         }
 
-        .teamMembers p .teamMembers button {
+        .teamMember {
+            background-color: rgba(0, 0, 255, 0.2); /* Bleu avec 50% de transparence */;
+            padding: 10px;
+        }
+
+        .teamMember p {
             font-size: 1rem;
+            width: 100%;
+        }
+
+        .teamMember .jobTitle {
+            background-color: blue;
+            border: 1px;
+            border-radius: 5px;
+            text-align: center;
         }

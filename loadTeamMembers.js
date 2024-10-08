@@ -9,10 +9,11 @@
                 
                 data.teamMembers.forEach(member => {
                     const memberDiv = document.createElement('div');
+                    memberDiv.classList.add('teamMember');
                     memberDiv.innerHTML = `
                         <h2>${member.name}</h2>
                         <p>${member.responsibility}</p>
-                        <p>${member.jobTitle}</p>
+                        <p class="jobTitle">${member.jobTitle}</p>
                     `;
                     teamContainer.appendChild(memberDiv);
                 });
