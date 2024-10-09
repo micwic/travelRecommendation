@@ -27,7 +27,12 @@
                 }
                 else {
                     alert('Possible destinations are : temples, beaches or countries!');
-                };
+                    // initialize entered value
+                    document.getElementById('searchCriteria').value = '';
+                    return false;
+                }
+                // select and display recommandation corresponding to search criteria
+                
             })
         }
         // Execute the function

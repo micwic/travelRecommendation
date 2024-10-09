@@ -1,3 +1,6 @@
+// declare recommandations list object as a global variable
+var recommandationsList;
+// load recommandations list object from file data content
 async function readTravel_recommandation_api() {
     try {
             // read the file
@@ -7,9 +10,9 @@ async function readTravel_recommandation_api() {
                 throw new Error('Erreur lors du chargement du fichier travel_recommandation_api.json');
             }
             // parse automatically/natively the json in a javascript objet
-            const data = await response.json();
+            recommandationsList = await response.json();
             // log the content to the console
-            console.log(data);
+            console.log(recommandationsList);
     } catch (error) {
         // log the error to the console
         console.error('Error: ', error);
