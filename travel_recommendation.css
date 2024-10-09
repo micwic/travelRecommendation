@@ -142,12 +142,28 @@
         .recommandationsList {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: flex-start;
+            width: 100%;
+            flex-grow: 1;
+            overflow-y: auto;
+            padding-top: 20px;
         }
 
         .recommandationsList img {
-            width: 100%; 
+            width: 50%;
+            max-width: 100%;
+            height: auto; 
+        }
+
+        .recommandationsList h1 {
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .recommandationsList p {
+            font-size: 1rem;
+            width: 100%;
         }
 
         /* Style pour la barre des réseaux sociaux */
