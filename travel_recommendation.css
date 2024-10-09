@@ -101,7 +101,6 @@
 
         /* Contenu principal */
         .mainHome {
-            flex: 50;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -140,9 +139,19 @@
             opacity: 1;
         }
 
+        .recommandationsList {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .recommandationsList img {
+            width: 100%; 
+        }
+
         /* Style pour la barre des réseaux sociaux */
         .socialMediaBar {
-            flex: 1;
             display: flex;
             flex-direction: column-reverse;
             padding: 10px;
