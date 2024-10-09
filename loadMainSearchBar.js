@@ -10,6 +10,25 @@
             } catch (error) {
                 console.error('Erreur:', error);
             }
+            // Associated logic content after DOM is created to avoid unexpected error due to async function execution
+            // check the value entered in search criteria input field after search button is clicked
+            document.getElementById('searchCriteriaButton').addEventListener('click', function() {
+                // get input search criteria and remove unwanted blanks or unwanted uppercase
+                let internalSearchCriteria = document.getElementById('searchCriteria').value.trim().toLowerCase();
+                // check the search criteria
+                if ( internalSearchCriteria ===  "beach" || internalSearchCriteria === "beaches" ) {
+                    internalSearchCriteria = "beaches";
+                } 
+                else if ( internalSearchCriteria === "temple" || internalSearchCriteria === "temples" ) {
+                    internalSearchCriteria = "temples";
+                }
+                else if ( internalSearchCriteria === "country" || internalSearchCriteria === "countries" ) {
+                    internalSearchCriteria = "countries";
+                }
+                else {
+                    alert('Possible destinations are : temples, beaches or countries!');
+                };
+            })
         }
-        //
+        // Execute the function
         loadMainSearchBar();
