@@ -17,3 +17,21 @@ async function readTravel_recommandation_api() {
 }
 // execute the function
 readTravel_recommandation_api();
+
+document.getElementById('searchCriteriaButton').addEventListener('click', function() {
+    // get input search criteria and remove unwanted blanks or unwanted uppercase
+    let internalSearchCriteria = document.getElementById('searchCriteria').value.trim().toLowerCase();
+    // check the search criteria
+    if ( internalSearchCriteria ===  "beach" || internalSearchCriteria === "beaches" ) {
+        internalSearchCriteria = "beaches";
+    } 
+    else if ( internalSearchCriteria === "temple" || internalSearchCriteria === "temples" ) {
+        internalSearchCriteria = "temples";
+    }
+    else if ( internalSearchCriteria === "country" || internalSearchCriteria === "countries" ) {
+        internalSearchCriteria = "countries";
+    }
+    else {
+        alert('Possible destinations are : temples, beaches or countries!');
+    };
+})
