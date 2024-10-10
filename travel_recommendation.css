@@ -175,12 +175,28 @@
             font-size: 1.5rem;
             margin: 0;
             color: grey;
+            padding-left: 5px;
         }
 
         .recommandationsItemText p {
             font-size: 1rem;
             margin: 0;
             color: lightgrey;
+            padding-left: 5px;
+        }
+
+        .recommandationsItemText button {
+            background-color: blue;
+            opacity: 1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: flex-start;
+            font-size: 1rem;
+            padding-top: 5px;
+            padding-left: 5px;
+            margin: 5px;
         }
 
         /* Style pour la barre des réseaux sociaux */
