@@ -76,7 +76,7 @@
                     recommandationsListFiltered.forEach(element => {
                         const recommandationsItem = document.createElement('div');
                         recommandationsItem.classList.add('recommandationsItem');
-                        recommandationsItem.innerHTML = `<img src="${element.imageURL}" alt="${element.name}">`;
+                        recommandationsItem.innerHTML = `<img src="${element.imageUrl}" alt="${element.name}">`;
                         const recommandationsItemText = document.createElement('div');
                         recommandationsItemText.classList.add('recommandationsItemText');
                         recommandationsItemText.innerHTML = `<h1>${element.name}</h1><p>${element.description}</p><button>Visit</button>`;
