@@ -32,8 +32,62 @@
                     return false;
                 }
                 // select and display recommandation corresponding to search criteria
-                
-            })
-        }
+                try {
+                    // initialize
+                    let recommandationsListFiltered = [];
+                    // extract only necessary content to a new common array with selected occurencies
+                    switch (internalSearchCriteria) {
+                        case 'beaches':
+                            recommandationsListFiltered = recommandationsList.beaches.map(beach => {
+                                return {
+                                    name: beach.name,
+                                    imageUrl: beach.imageUrl,
+                                    description: beach.description
+                                };
+                            });
+                            break;
+                        case 'temples':
+                            recommandationsListFiltered = recommandationsList.temples.map(temple => {
+                                return {
+                                    name: temple.name,
+                                    imageUrl: temple.imageUrl,
+                                    description: temple.description
+                                };
+                            });
+                            break;
+                        case 'countries':
+                            recommandationsList.countries.forEach(country => {
+                                country.cities.forEach(city => {
+                                recommandationsListFiltered.push({
+                                    name: city.name,
+                                    imageUrl: city.imageUrl,
+                                    description: city.description
+                                });
+                            });
+                        });
+                            break;
+                        default:
+                            throw new Error('Erreur de programmation E001 dans loadMainSearch.js');
+                    }
+                    // get recommandationsList container and initialize it
+                    const recommandationsListDiv = document.getElementById('recommandationsList');
+                    recommandationsListDiv.innerHTML = '';
+                    // iterate through common array to build corresping html
+                    recommandationsListFiltered.forEach(element => {
+                        const recommandationsItem = document.createElement('div');
+                        recommandationsItem.classList.add('recommandationsItem');
+                        recommandationsItem.innerHTML = `<img src="${element.imageURL}" alt="${element.name}">`;
+                        const recommandationsItemText = document.createElement('div');
+                        recommandationsItemText.classList.add('recommandationsItemText');
+                        recommandationsItemText.innerHTML = `<h1>${element.name}</h1><p>${element.description}</p><button>Visit</button>`;
+                        // put the generated content into the recommandationsList container
+                        recommandationsListDiv.appendChild(recommandationsItem);
+                        recommandationsListDiv.appendChild(recommandationsItemText);
+                    });
+                } catch (error) {
+                    console.error('Erreur:', error);
+                }
+            }
+        )}
         // Execute the function
         loadMainSearchBar();
