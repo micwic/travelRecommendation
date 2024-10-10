@@ -81,8 +81,8 @@
                         recommandationsItemText.classList.add('recommandationsItemText');
                         recommandationsItemText.innerHTML = `<h1>${element.name}</h1><p>${element.description}</p><button>Visit</button>`;
                         // put the generated content into the recommandationsList container
+                        recommandationsItem.appendChild(recommandationsItemText);
                         recommandationsListDiv.appendChild(recommandationsItem);
-                        recommandationsListDiv.appendChild(recommandationsItemText);
                     });
                 } catch (error) {
                     console.error('Erreur:', error);
