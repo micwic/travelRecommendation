@@ -29,6 +29,7 @@
                     alert('Possible destinations are : temples, beaches or countries!');
                     // initialize entered value
                     document.getElementById('searchCriteria').value = '';
+                    document.getElementById('recommandationsList').innerHTML = '';
                     return false;
                 }
                 // select and display recommandation corresponding to search criteria
@@ -87,7 +88,12 @@
                 } catch (error) {
                     console.error('Erreur:', error);
                 }
+            })
+            // clear button function
+            document.getElementById('clearCriteriaAndList').addEventListener('click', function() {
+                document.getElementById('searchCriteria').value = '';
+                document.getElementById('recommandationsList').innerHTML = '';
+            })
             }
-        )}
         // Execute the function
         loadMainSearchBar();
