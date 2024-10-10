@@ -13,6 +13,10 @@ async function readTravel_recommandation_api() {
             recommandationsList = await response.json();
             // log the content to the console
             console.log(recommandationsList);
+            //
+            const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+            const newYorkTime = new Date().toLocaleTimeString('en-US', options);
+            console.log("Current time in New York:", newYorkTime);
     } catch (error) {
         // log the error to the console
         console.error('Error: ', error);

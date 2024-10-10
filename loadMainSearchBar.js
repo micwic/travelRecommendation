@@ -64,6 +64,7 @@
                                     imageUrl: city.imageUrl,
                                     description: city.description
                                 });
+                                
                             });
                         });
                             break;
